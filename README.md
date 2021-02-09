@@ -171,6 +171,7 @@ see the
 - [ ] more efficient object-detect model such as EfficientNet, or scaled-yolov4 to replace self-define model part
 - [ ] operation GUI
 - [ ] GAN series in generate new images/style transfer/faces changes/ super resolution
+- [ ] WSOD in annotation or heat-map visual with few manual annotations
 - [ ] Vision Transformer to generate specific images
 - [ ] incremental learning and self-learning algorithms or methods during iteration and optimazing process 
 
