@@ -57,7 +57,7 @@ numpy, matplotlib
 
 ![pic](./info/retina.gif)
 
-## Tutorial video
+## Tutorial video (click the picture below to see the detail / 点击下方图片查看使用基础教程)
 
 [![Watch the video](https://github.com/ztfmars/semi_auto_label/blob/main/info/cover.JPG)](https://www.bilibili.com/video/BV1ih411C7j1/)
 
