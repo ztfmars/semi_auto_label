@@ -57,6 +57,10 @@ numpy, matplotlib
 
 ![pic](./info/retina.gif)
 
+## Tutorial video
+
+[![Watch the video](https://github.com/ztfmars/semi_auto_label/blob/main/info/cover.JPG)](https://www.bilibili.com/video/BV1ih411C7j1/)
+
 # 3. Parameters Settings
 you can change the parameters in `label_config.cfg`
 
