@@ -60,41 +60,28 @@ numpy, matplotlib
 # 3. Parameters Settings
 you can change the parameters in `label_config.cfg`
 
+```bash
 [FILE]  -> for the location and mood to choose
-
-`xml_dir` -> the dir where to place the generated xml file
-
-`pic_di`r -> the dir where you put your picture to label
-
-`model_name` -> you can use 3 key words to choose the wanted mood: `MOT`, `SELF_DEFINE`, `RETINA`
-
-`[SELF_DEFINE]`  -> for the pretrained yolov3 to label specific types in picture
-
-`score_threshold` -> scores for yolov3
-
-`involved_classes` -> the pretrained yolov3 model's type of your own
+	xml_dir -> the dir where to place the generated xml file
+	pic_dir -> the dir where you put your picture to label
+	model_name -> you can use 3 key words to choose the wanted mood: `MOT`, `SELF_DEFINE`, `RETINA`
+	[SELF_DEFINE]  -> for the pretrained yolov3 to label specific types in picture
+	score_threshold -> scores for yolov3
+	involved_classes -> the pretrained yolov3 model's type of your own
 
 
 [MOT]  -> for the video label process
-
-`interval` -> xml file save interval
-
-`set_width` -> the width size of wanted picture
-
-`set_height` ->the height size of wanted picture
-
-`video` -> video path
-
-`tracker` -> you can choose one of the MOT model to track the object: `csrt/kcf/boosting/mil/tld/medianflow/mosse`
+	interval -> xml file save interval
+	set_width -> the width size of wanted picture
+	set_height ->the height size of wanted picture
+	video -> video path
+	tracker -> you can choose one of the MOT model to track the object: `csrt/kcf/boosting/mil/tld/medianflow/mosse`
 
 [RETINA] -> for the retina model to label wanted types of 80 coco types
-
-`retina_weight` -> the full path to store the pretrained model 
-
-`coco_classes` -> the types you want to label, if you want label all the types, fill it with words `all`
-
-`retina_threshold` -> the threshold for model to detect
-
+	retina_weight -> the full path to store the pretrained model 
+	coco_classes -> the types you want to label, if you want label all the types, fill it with words `all`
+	retina_threshold -> the threshold for model to detect
+```
 
 
 # 5. Train and iteration - self-define
@@ -174,7 +161,8 @@ the type names are showing as followings:
 YOLOV3: best_weight_711.h5 / yolo_weights.h5
 RetinaNet:  resnet50_coco_best_v2.1.0.h5
 
-see the release
+see the 
+[release](https://github.com/ztfmars/semi_auto_label/releases/tag/keras_tf1_version)
 
 # TO-DO list
 
