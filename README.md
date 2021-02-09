@@ -138,11 +138,12 @@ before beginning, remember to change the type names and corresponding key number
 
 - ## RETINA
 `coco_classes=all` -> you want to label 80 types
+
 `coco_classes=person/car` -> you only want to label person and car, others are ignored
 
 the type names are showing as followings:
 	
-					0: 'person', 1: 'bicycle', 2: 'car', 3: 'motorcycle', 4: 'airplane', 5: 'bus', 6: 'train',
+		       0: 'person', 1: 'bicycle', 2: 'car', 3: 'motorcycle', 4: 'airplane', 5: 'bus', 6: 'train',
 	               7: 'truck', 8: 'boat', 9: 'traffic light', 10: 'fire hydrant', 11: 'stop sign', 12: 'parking meter',
 	               13: 'bench', 14: 'bird', 15: 'cat', 16: 'dog', 17: 'horse', 18: 'sheep', 19: 'cow', 20: 'elephant',
 	               21: 'bear', 22: 'zebra', 23: 'giraffe', 24: 'backpack', 25: 'umbrella', 26: 'handbag', 27: 'tie',
@@ -158,8 +159,8 @@ the type names are showing as followings:
 
 # Pretrained Model
 
-YOLOV3: best_weight_711.h5 / yolo_weights.h5
-RetinaNet:  resnet50_coco_best_v2.1.0.h5
+- YOLOV3: best_weight_711.h5 / yolo_weights.h5
+- RetinaNet:  resnet50_coco_best_v2.1.0.h5
 
 see the 
 [release](https://github.com/ztfmars/semi_auto_label/releases/tag/keras_tf1_version)
@@ -169,7 +170,8 @@ see the
 - [ ] ROI select to crop image with differ types in video
 - [ ] more efficient object-detect model such as EfficientNet, or scaled-yolov4 to replace self-define model part
 - [ ] operation GUI
-- [ ]  Vision Transformer to generate specific images
+- [ ] GAN series in generate new images/style transfer/faces changes/ super resolution
+- [ ] Vision Transformer to generate specific images
 - [ ] incremental learning and self-learning algorithms or methods during iteration and optimazing process 
 
 
