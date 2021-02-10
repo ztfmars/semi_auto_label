@@ -9,16 +9,18 @@ PS: if you want to get `yolo-format txt`, you can run `train_yolo/voc_annotation
 
 # 1.Env info
 ## PC env
+```bash
 python >= 3.6.5
 win10, mac or linux is ok
-
+```
 ## pip list
+```bash
 tensorflow-gpu=1.14.0
 keras==2.2.5
 opencv==4.2.0
 lxml==4.4.2
 numpy, matplotlib
-
+```
 **tips:**
 			tf2 is ok, if you user your own tf2 model as following: 
 			(1)replace of `self-define model` and change the function `auto_label_picdir` at line 72 in 'main.py';
@@ -94,11 +96,16 @@ you can change the parameters in `label_config.cfg`
 You can use train & iteration to short the label process, if you use choose `self-define` mood to label many  specific types raw picture on your own
 
 **case 1:**
-I offer all the `yolov3`'s training py-file in dir `/train_yolo`. The trained model can replace the weight and types in dir `/model` so that you can label your specific-types' picture with the tools. The details you can see `README` in dir `/train_yolo`
-**tips:**
-remember to download pretrained weight `best_weight_711.h5` to sore in dir `model/models/` for semiauto label; (**types: phone/cigar/person/hat**)
-download pretrained weight `yolo_weights.h5` to store in `train_yolo/model_data/` for fine-turning YOLOv3 in training process
+I offer all the `yolov3`'s training py-file in dir `/train_yolo`. After your own training process, the new trained model can be used to replace the weight in dir `/model/models/best_weight_711.h5` so that you can label your specific-types' picture with the tools. The details you can see `README` in dir `/train_yolo`
 
+download pretrained weight `yolo_weights.h5` and store in `train_yolo/model_data/` for fine-turning your own type weight with YOLOv3
+
+
+**tips:**
+
+	remember to download pretrained weight `best_weight_711.h5` and store it in dir `model/models/` if you want to semi-auto-label for following 4 types: 
+	(**types: phone/cigar/person/hat**)
+	
 **case 2:**
 You can also use your own model to detect objects to generate VOC xml. But how? you can change the code in `main.py` from line 70 to line 73;
 make sure your model are encapsulated  as followings:
@@ -163,8 +170,22 @@ the type names are showing as followings:
 
 # Pretrained Model
 
-- YOLOV3: best_weight_711.h5 / yolo_weights.h5
-- RetinaNet:  resnet50_coco_best_v2.1.0.h5
+- YOLOV3: 
+		
+	**function?**
+		best_weight_711.h5 -> pretrained yolov3 for detecting `phone/cigar/person/hat`
+		yolo_weights.h5 -> could be used for fine-turning YOLOv3 for your own types
+		
+	**which dir to store them?**
+		best_weight_711.h5 -> `/model/models/`
+		yolo_weights.h5 -> `train_yolo/model_data/`
+		
+- RetinaNet:  
+		
+	**funciton?**
+		resnet50_coco_best_v2.1.0.h5 -> retinanet model weight to detect coco types
+	**which dir to store them?**
+		resnet50_coco_best_v2.1.0.h5 -> `/load_weight/`
 
 see the 
 [release](https://github.com/ztfmars/semi_auto_label/releases/tag/keras_tf1_version)
