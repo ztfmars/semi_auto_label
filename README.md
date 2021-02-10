@@ -23,7 +23,9 @@ numpy, matplotlib
 ```
 **tips:**
 			tf2 is ok, if you user your own tf2 model as following: 
+			
 			(1)replace of `self-define model` and change the function `auto_label_picdir` at line 72 in 'main.py';
+			
 			(2)git clone from [keras_retina](https://github.com/fizyr/keras-retinanet) master branch and replace the dir `keras-retinanet-disable-tf2-behavior` with rebuild the env (or you can use `pip install keras_retina`);
 
 
@@ -173,18 +175,25 @@ the type names are showing as followings:
 - YOLOV3: 
 		
 	**function?**
+		
 		best_weight_711.h5 -> pretrained yolov3 for detecting `phone/cigar/person/hat`
+		
 		yolo_weights.h5 -> could be used for fine-turning YOLOv3 for your own types
 		
 	**which dir to store them?**
+		
 		best_weight_711.h5 -> `/model/models/`
+		
 		yolo_weights.h5 -> `train_yolo/model_data/`
 		
 - RetinaNet:  
 		
 	**funciton?**
+		
 		resnet50_coco_best_v2.1.0.h5 -> retinanet model weight to detect coco types
+	
 	**which dir to store them?**
+		
 		resnet50_coco_best_v2.1.0.h5 -> `/load_weight/`
 
 see the 
